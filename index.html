@@ -136,55 +136,63 @@ section {
     margin-right: auto;
   }
 
- .tabla-unificada {
-        width: 80%;
-        margin: 40px auto;
-        border-collapse: collapse;
-        text-align: center;
-        font-family: Munito, sans-serif;
-        overflow-x: auto;
-      }
-      .tabla-unificada th, .tabla-unificada td {
-        border: 1px solid #ccc;
-        padding: 8px;
-      }
-      .tabla-unificada th {
-        background-color: #000000;
-        font-weight: bold;
-	color: white;
-      }
-	.tabla-unificada td {
-	  background-color: #ffffff;
-	}
-      .tabla-unificada caption {
-        font-size: 1.0em;
-        margin-bottom: 12px;
-        font-weight: bold;
-        text-align: center;
-      }
-      .tabla-unificada small {
-        display: block;
-        color: #333;
-        font-size: 0.8em;
-      }
-	.tabla-unificada tbody tr:nth-child(even) {
-	  background-color: #f9f9f9;
-	}
-.tabla-unificada table {
-  width: 80%;
-  min-width: 600px;
+ .tabla-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabla-unificada {
+  width: 100%;
+  max-width: 800px; /* O el máximo que quieras */
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
   font-size: 16px;
 }
+
+.tabla-unificada th, .tabla-unificada td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tabla-unificada th {
+  background-color: #000000;
+  font-weight: bold;
+  color: white;
+}
+
+.tabla-unificada td {
+  background-color: #ffffff;
+}
+
+.tabla-unificada caption {
+  font-size: 1em;
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tabla-unificada small {
+  display: block;
+  color: #333;
+  font-size: 0.8em;
+}
+
+.tabla-unificada tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 @media (max-width: 768px) {
-  .tabla-unificada table {
+  .tabla-unificada {
     font-size: 12px;
-    min-width: 80%;
   }
 
   .tabla-unificada th,
   .tabla-unificada td {
     padding: 4px;
   }
+}
 
   </style>
 </head>
@@ -218,10 +226,10 @@ Venta de <strong>Huevos Frescos</strong> en <strong>Godoy Cruz y Guaymallén</st
 <h3>
 Precios Actualizados junio 2025
 <br>Puestos en su domicilio o negocio</h3>
- <table class="tabla-unificada">
-      <caption>
-</caption>
-      <thead>
+ 
+<div class="tabla-wrapper">
+  <table class="tabla-unificada">
+        <thead>
         <tr>
           <th>CANTIDAD</th>
           <th>SALTEADOS</th>
@@ -253,8 +261,8 @@ Precios Actualizados junio 2025
         </tr>
       </tbody>
     </table>
-<caption>
-Consulte para obtener informacion sobre otras presentaciones y promociones.
+</div>
+<br>Consulte para obtener informacion sobre otras presentaciones y promociones.
 </caption>
 
 <section id="feria">
