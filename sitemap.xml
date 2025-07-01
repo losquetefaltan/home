@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- Página principal -->
+   <url>
+      <loc>https://losquetefaltan.github.io/home/</loc>
+      <lastmod>2024-06-29</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <!-- Ejemplo de otra página interna -->
+   <!-- Agregá aquí otras páginas si las tenés -->
+   <!--
+   <url>
+      <loc>https://losquetefaltan.github.io/home/precios-huevos.html</loc>
+      <lastmod>2024-06-29</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   -->
+
+</urlset>
